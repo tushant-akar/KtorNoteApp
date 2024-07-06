@@ -17,9 +17,8 @@ fun Application.configureRouting() {
 
     routing {
         get("/") {
-            call.respondText("Hello World!", contentType = ContentType.Text.Plain)
+            call.respondText("Hello World!", ContentType.Text.Plain)
         }
-
         UserRoutes(db = db, jwtService = jwtService, hashFunction = hashFunction)
         NoteRoutes(db = db, jwtService = jwtService, hashFunction = hashFunction)
 
