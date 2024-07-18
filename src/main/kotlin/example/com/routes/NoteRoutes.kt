@@ -40,7 +40,7 @@ fun Route.NoteRoutes(
                 call.respond(HttpStatusCode.Conflict, SimpleResponse(false, e.message ?: "Problems retrieving User"))
             }
         }
-        post(NOTES) {
+        get(NOTES) {
             try {
                 val email = call.principal<User>()!!.email
                 call.respond(HttpStatusCode.OK, db.getAllNotes(email))

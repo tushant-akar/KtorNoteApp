@@ -21,7 +21,5 @@ fun Application.configureRouting() {
         }
         UserRoutes(db = db, jwtService = jwtService, hashFunction = hashFunction)
         NoteRoutes(db = db, jwtService = jwtService, hashFunction = hashFunction)
-
-
     }
 }
