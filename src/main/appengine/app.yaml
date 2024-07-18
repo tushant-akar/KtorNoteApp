@@ -1,5 +1,5 @@
 runtime: java11
-entrypoint: 'java -jar google-appengine-standard-1.0-SNAPSHOT-all.jar'
+entrypoint: 'java -jar com.example.ktor-note-all.jar'
 beta_settings:
   cloud_sql_instances: "true-server-427211-i9:us-central1:postgres"
 env_variables:
